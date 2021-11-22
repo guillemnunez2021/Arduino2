@@ -27,5 +27,3 @@ void loop() {              // inicia el bucle del programa
 
 }
 //*********************** FUNCIONA ******************************
-
-s
