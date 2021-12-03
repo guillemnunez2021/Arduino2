@@ -8,7 +8,7 @@
 //********** Includes *************************************************************
 
 //********** Variables ************************************************************
-int tempAigua = 89;
+int tempAigua = 101;
 
 //********** Setup ****************************************************************
 void setup()              // run once, when the sketch starts
@@ -16,19 +16,19 @@ void setup()              // run once, when the sketch starts
 Serial.begin(9600);     // set up Serial library at 9600 bps
 if (tempAigua < 90)
 {
-Serial.print("Aigua encara no bull");
+Serial.println("Aigua encara no bull");
 }
 else if (tempAigua >= 90 && tempAigua <= 99)  
 {
-Serial.print("Aigua apunt de bullir");
+Serial.println("Aigua apunt de bullir");
 }
 else if (tempAigua == 100)
 {
-Serial.print("Aigua a 100ºc"); 
+Serial.println("Aigua a 100ºc"); 
 }
 else  
 
-Serial.print("Aigua bullint");
+Serial.println("Aigua bullint");
 }
 
 //********** Loop *****************************************************************
