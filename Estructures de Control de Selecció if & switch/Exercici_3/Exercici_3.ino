@@ -19,7 +19,7 @@ void setup()              // run once, when the sketch starts
   {
     Serial.print("Aigua esta bullint!");
   } 
-  if (tempAigua < 100)
+  else 
   {
   Serial.print("Aigua encara no bull");
 }
