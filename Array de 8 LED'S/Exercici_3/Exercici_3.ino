@@ -106,7 +106,8 @@ void loop()
   digitalWrite(led7, HIGH);    // posar a 5V el pin 12
   
   delay(500);                  // es queden leds 500ms encesos
-
+  
+  
 }
 
 //********** Funcions *************************************************************
