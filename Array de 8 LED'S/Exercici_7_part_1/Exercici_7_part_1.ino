@@ -20,6 +20,7 @@ const byte led7 = 12;         // donar nom al pin 12 de l’Arduino
 //********** Setup ****************************************************************
 void setup()
 {
+  Serial.begin(9600);
   pinMode(led0, OUTPUT);     // definir el pin 5 com una sortida
   pinMode(led1, OUTPUT);     // definir el pin 6 com una sortida
   pinMode(led2, OUTPUT);     // definir el pin 7 com una sortida
