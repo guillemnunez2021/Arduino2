@@ -1,13 +1,13 @@
        
-const byte segA = 7;     
+       
+ const byte segA = 7;     
 const byte segB = 6; 
-const byte segC = 4; 
-const byte segD = 2; 
-const byte segE = 3; 
+const byte segC = 2; 
+const byte segD = 3; 
+const byte segE = 4; 
 const byte segF = 9; 
 const byte segG = 10; 
-const byte segDP = 5; 
-const byte boto1 = 11;
+const byte segDP = 5;
 boolean m = 0;
 void setup() {
   // put your setup code here, to run once:
