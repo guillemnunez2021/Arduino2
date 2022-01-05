@@ -8,6 +8,10 @@ const byte segE = 4;
 const byte segF = 9; 
 const byte segG = 10; 
 const byte segDP = 5;
+const byte buttonPin = 11;
+const byte buttonPin2 = 12;
+byte buttonState = 0;
+byte buttonState2 = 0;
 boolean m = 0;
 void setup() {
   // put your setup code here, to run once:
@@ -25,9 +29,10 @@ pinMode(segDP, OUTPUT);
 void loop() {
   // put your main code here, to run repeatedly:
 //lletra 0
-butonState = digitalRead(m);
+buttonState = digitalRead(buttonPin);
+buttonState2 = digitalRead(buttonPin2);
 
-if (buttonState == 0)
+if (buttonState == 1)
 {
 digitalWrite(segA, HIGH);
 digitalWrite(segB, HIGH);
@@ -38,10 +43,11 @@ digitalWrite(segF, HIGH);
 digitalWrite(segG, LOW);
 digitalWrite(segDP, LOW);
 delay(1000);
-buttonState = m + 1;
-} 
+
+ buttonState = buttonState +1;
+ 
 //lletra 1
-else if (buttonState == 1)
+
 digitalWrite(segA, LOW);
 digitalWrite(segB, HIGH);
 digitalWrite(segC, HIGH);
@@ -51,7 +57,7 @@ digitalWrite(segF, LOW);
 digitalWrite(segG, LOW);
 digitalWrite(segDP, LOW);
 delay(1000);
-buttonState = m + 1;
+
 //lletra 2
 digitalWrite(segA, HIGH);
 digitalWrite(segB, HIGH);
@@ -62,7 +68,7 @@ digitalWrite(segF, LOW);
 digitalWrite(segG, HIGH);
 digitalWrite(segDP, LOW);
 delay(1000);
-buttonState = m + 1;
+
 //lletra 3
 digitalWrite(segA, HIGH);
 digitalWrite(segB, HIGH);
@@ -73,7 +79,7 @@ digitalWrite(segF, LOW);
 digitalWrite(segG, HIGH);
 digitalWrite(segDP, LOW);
 delay(1000);
-buttonState = m + 1;
+
 //lletra 4
 digitalWrite(segA, LOW);
 digitalWrite(segB, HIGH);
@@ -84,7 +90,7 @@ digitalWrite(segF, HIGH);
 digitalWrite(segG, HIGH);
 digitalWrite(segDP, LOW);
 delay(1000);
-buttonState = m + 1;
+
 //lletra 5
 digitalWrite(segA, HIGH);
 digitalWrite(segB, LOW);
@@ -95,7 +101,7 @@ digitalWrite(segF, HIGH);
 digitalWrite(segG, HIGH);
 digitalWrite(segDP, LOW);
 delay(1000);
-buttonState = m + 1;
+
 //lletra 6
 digitalWrite(segA, LOW);
 digitalWrite(segB, LOW);
@@ -106,10 +112,9 @@ digitalWrite(segF, HIGH);
 digitalWrite(segG, HIGH);
 digitalWrite(segDP, LOW);
 delay(1000);
-buttonState = m + 1;
+
 //lletra 7
-else if(buttonSate == 7)
-{
+
 digitalWrite(segA, HIGH);
 digitalWrite(segB, HIGH);
 digitalWrite(segC, HIGH);
@@ -119,11 +124,10 @@ digitalWrite(segF, LOW);
 digitalWrite(segG, LOW);
 digitalWrite(segDP, LOW);
 delay(1000);
-buttonState = m + 1;
-}
+
+
 //lletra 8
-else if(buttonState == 8)
-{
+
 digitalWrite(segA, HIGH);
 digitalWrite(segB, HIGH);
 digitalWrite(segC, HIGH);
@@ -133,11 +137,10 @@ digitalWrite(segF, HIGH);
 digitalWrite(segG, HIGH);
 digitalWrite(segDP, LOW);
 delay(1000);
-buttonState = m + 1;
-}
+
+
 //lletra 9
-else if (buttonState == 9)
-{
+
 digitalWrite(segA, HIGH);
 digitalWrite(segB, HIGH);
 digitalWrite(segC, HIGH);
@@ -147,7 +150,6 @@ digitalWrite(segF, HIGH);
 digitalWrite(segG, HIGH);
 digitalWrite(segDP, LOW);
 delay(1000); 
-buttonState = m + 1;
 }
 else{
   digitalWrite(segA, LOW);
@@ -159,6 +161,6 @@ digitalWrite(segF, LOW);
 digitalWrite(segG, LOW);
 digitalWrite(segDP, LOW);
 delay(1000);
-m = 0
+m = 0;
 }
 }
