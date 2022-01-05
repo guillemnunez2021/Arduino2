@@ -1,9 +1,9 @@
        
-const byte segA = 7;     
+ const byte segA = 7;     
 const byte segB = 6; 
-const byte segC = 4; 
-const byte segD = 2; 
-const byte segE = 3; 
+const byte segC = 2; 
+const byte segD = 3; 
+const byte segE = 4; 
 const byte segF = 9; 
 const byte segG = 10; 
 const byte segDP = 5; 
