@@ -44,7 +44,7 @@ digitalWrite(segG, LOW);
 digitalWrite(segDP, LOW);
 delay(1000);
 
- buttonState = buttonState +1;
+
  
 //lletra 1
 
