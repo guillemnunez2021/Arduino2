@@ -40,12 +40,12 @@ void loop() {
 buttonState = digitalRead(buttonPin);
 
 
-if (buttonState == 1) //polsador premut
+if (buttonState == 1)//polsador premut
 {
   para = !para;
   delay(200);
 }
-if (para == 0)
+if (para == 1)
 {
   numeroact++;
   if (numeroact++ == 10)
