@@ -38,7 +38,10 @@ blueValue = 0;
 // or in the previous loop ... regardless, this turns RED off
 // analogWrite(RED, 0);
 // delay(1000);
-
+if (distancia = 0 && distancia <= 10)
+{
+  
+}
 for(int i = 0; i < 255; i += 1) // fades out red bring green full when i=255
 {
 redValue -= 1;
