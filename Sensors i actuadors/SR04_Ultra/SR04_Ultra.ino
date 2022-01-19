@@ -9,6 +9,7 @@ long a;
 void setup() {
    Serial.begin(9600);
    delay(1000);
+
 }
 
 void loop() {
@@ -16,4 +17,5 @@ void loop() {
    Serial.print(a);
    Serial.println("cm");
    delay(1000);
+
 }
