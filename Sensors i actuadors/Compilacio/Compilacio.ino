@@ -50,7 +50,7 @@ if (a >= 20 && a <= 30)
 {
   analogWrite(RED, 255);
 analogWrite(GREEN, 255);
-analogWrite(BLUE, 47); 
+analogWrite(BLUE, 0); 
 delay(500);
  analogWrite(RED, 0);
 analogWrite(GREEN, 255);
